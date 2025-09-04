@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda Tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<link rel="icon" type="image/png" href="hp.png" style="width: 10px;height: 10px;">
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:0.75rem">
+        <img src="hp.png" alt="HP Logo" 
+        style="width:60px;height:60px;border-radius:8px;object-fit:contain;background:white;padding:4px">
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
+      <h2 style="margin:0">Productos</h2>
+      <input id="search" placeholder="Buscar..." style="padding:0.5rem;border-radius:8px;border:1px solid #e5e7eb;min-width:160px" />
+    </section>
+
+    <section class="grid" id="products"></section>
+  </main>
+
+  <button id="openCart" class="cart-btn">Carrito (0)</button>
+
+  <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+    <div class="cart-header">Tu carrito <button id="closeCart" style="float:right;background:transparent;border:0;cursor:pointer">✕</button></div>
+    <div class="cart-list" id="cartList"> <!-- items --> </div>
+    <div class="cart-footer">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem">
+        <div class="muted">Subtotal</div>
+        <div id="subtotal">S/ 0.00</div>
+      </div>
+      <button id="checkout" class="btn" style="width:100%">Pagar</button>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

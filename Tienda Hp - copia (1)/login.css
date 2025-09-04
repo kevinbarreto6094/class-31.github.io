@@ -1,0 +1,53 @@
+/* --- LOGIN CENTRADO --- */
+#login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;      /* ocupa toda la pantalla */
+  background: #f3f4f6;    /* opcional: fondo gris suave */
+}
+
+#loginForm {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+#loginForm h2 {
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+#loginForm input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#loginForm button {
+  width: 100%;
+  padding: 12px;
+  background: #0f172a;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#loginForm button:hover {
+  background: #1e293b;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
